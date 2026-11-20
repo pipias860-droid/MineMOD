@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "cosmos-hit-effects",
+	"version": "${version}",
+	"name": "Cosmos Hit Effects",
+	"description": "Replaces player hurt flashes with a pulsing cosmos nebula and adds stars to critical hits.",
+	"authors": [
+		"Cosmos Hit Effects"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.cosmos.hiteffects.client.CosmosHitEffectsClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "cosmos-hit-effects.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.cosmos.hiteffects.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"LivingEntityRendererMixin",
+		"PlayerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
